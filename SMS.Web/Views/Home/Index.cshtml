@@ -1,8 +1,13 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
+﻿@model AboutViewModel2
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h1>Home Page</h1>
+    <p>'This is the default page displayed when the application loads</p>
 </div>
+
+<p>Today is <b>@DateTime.Now.ToLongDateString()</b></p>
+
+<div class="text-center">
+    <p>@ViewBag.Message is @ViewBag.LongTime</p>
+</div>
+
